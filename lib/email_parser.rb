@@ -12,7 +12,6 @@ class EmailParser
   end
   
   def parse 
-    binding.pry
     email_adress.split.(/[\s,]+/).uniq
   end
   
