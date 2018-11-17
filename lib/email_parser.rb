@@ -13,7 +13,7 @@ class EmailParser
   
   def parse 
     binding.pry
-    email_adress.split.uniq
+    email_adress.split.(/[\s,]+/).uniq
   end
   
 end
