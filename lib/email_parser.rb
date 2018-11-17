@@ -5,8 +5,12 @@
 class EmailParser
   attr_accessor :email_address
   
-  def self.email_csv(csv_data)
-    rows = csv_data.split('\n)')
+  def initialize(email_adress)
+    @email_adress = email_adress
+  end
   
+  def parse 
+    email_adress.split.uniq
+  end
   
 end
