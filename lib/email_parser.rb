@@ -7,14 +7,13 @@ require 'pry'
 class EmailParser
   attr_accessor :email_address
   
-  def initialize(email_address)
-    @email_address = email_address
+  def initialize(emails)
+    @emails = emails
   end
   
   def parse 
-    email_address.split.(/[\s,]+/).uniq
+    emails.split.(/[\s,]+/).uniq
   end
   
 end
 
-EmailParser.new
