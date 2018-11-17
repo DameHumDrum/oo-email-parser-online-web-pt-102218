@@ -12,8 +12,8 @@ class EmailParser
   end
   
   def parse 
-    email_adress.split.uniq
     binding.pry
+    email_adress.split.uniq
   end
   
 end
